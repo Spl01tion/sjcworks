@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.5.1.js"></script>
+    <style>
+      @font-face {
+        font-family: plightit;
+        src: url(fonts/Poppins-LightItalic.otf);
+      }
+
+      @font-face {
+        font-family: pmed;
+        src: url(fonts/Poppins-Medium.otf);
+      }
+
+      @font-face {
+        font-family: preg;
+        src: url(fonts/Poppins-Regular.otf);
+      }
+      :root {
+        --black: #000;
+        --black1: #0b0b0c;
+        --dk-black: #202020;
+        --dk-white: #fff;
+        --black2: rgb(18, 18, 18);
+        --black3: #221f1f;
+        --gray: #666;
+        --red: #ef3a3d;
+        --white2: #d9d9d9;
+        --white: #fff;
+        --gold: #f0131e;
+        --gold1: #f0131e;
+
+        --foreground: var(--dk-black);
+        --background: var(--dk-white);
+      }
+      .darkmode {
+        --black: #000;
+        --black1: #0b0b0c;
+        --dk-black: #202020;
+        --dk-white: #fff;
+        --black2: rgb(18, 18, 18);
+        --black3: #221f1f;
+        --gray: #666;
+        --red: #ef3a3d;
+        --white2: #d9d9d9;
+        --white: #fff;
+        --gold: #f0131e;
+        --gold1: #f0131e;
+
+        --foreground: var(--dk-white);
+        --background: var(--dk-black);
+      }
+      .introver{
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 50vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .introver .gridover {
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .introver .gridover .overtext {
+        width: 90%;
+        font-weight: 600;
+        text-shadow: 2px 2px 2px #fff;
+        font-size: 1em;
+        position: absolute;
+        text-align: center;
+        font-family: plightit;
+        z-index: 5;
+      }
+
+
+      .introver ul {
+        display: grid;
+        grid-template-columns: 4fr 2fr 2fr 3fr 6fr;
+        max-width: 400px;
+      }
+      .gridover:nth-child(1){
+        filter: blur(5px);
+      }
+      .gridover:nth-child(2){
+          clip-path: circle(100px at var(--x) var(--y));
+
+      }
+      ul {
+        list-style: none;
+        margin: 0 0 0 2rem;
+        padding: 2.2rem;
+      }
+      .introver img {
+        display: block;
+        width: 100%;
+      }
+      .introver .grid-container_lf li:nth-child(1) {
+        grid-row: 5 / span 2;
+        grid-column: 1 / span 2;
+        z-index: 2;
+      }
+      .introver .grid-container_lf li:nth-child(2) {
+        grid-row: 2 / span 4;
+        grid-column: 2 / span 3;
+      }
+      .introver .grid-container_lf li:nth-child(3) {
+        grid-row: 6 / span 4;
+        grid-column: 2 / span 2;
+        z-index: 2;
+      }
+
+      .introver .grid-container_rg li:nth-child(1) {
+        grid-row: 5 / span 2;
+        grid-column: 1 / span 2;
+        z-index: 2;
+      }
+      .introver .grid-container_rg li:nth-child(2) {
+        grid-row: 2 / span 4;
+        grid-column: 2 / span 3;
+      }
+      .introver .grid-container_rg li:nth-child(3) {
+        grid-row: 5 / span 3;
+        grid-column: 4 / span 2;
+        z-index: 2;
+      }
+      li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+      }
+      .grid-container_lf,
+      .grid-container_rg {
+        transform: translate(0, 0);
+        transform: translate(calc(var(--x) / 25), calc(var(--y) / 25));
+      }
+      .circle{
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #f0131e;
+        border-radius: 50%;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+        transform: translate(0, 0);
+        transform: translate(var(--x),var(--y));
+      }
+    </style>
+    <title>Overlapping</title>
+  </head>
+  <body>
+    <section class="introver">
+      <div class="gridover">
+        <ul class="grid-container_lf">
+          <li><img src="imgs/galeria/overlap/retrato.jpg" alt="" /></li>
+          <li><img src="imgs/galeria/overlap/retrato1.jpg" alt="" /></li>
+          <li><img src="imgs/galeria/overlap/retrato2.jpg" alt="" /></li>
+        </ul>
+        <ul class="grid-container_rg">
+          <li class="lirg"><img src="imgs/galeria/overlap/retrato3.jpg" alt="" /></li>
+          <li class="lirg"><img src="imgs/galeria/overlap/retrato28.jpg" alt="" /></li>
+          <li class="lirg"><img src="imgs/galeria/overlap/wedd404.jpg" alt="" /></li>
+        </ul>
+        <p class="overtext">
+          Fotografia é a nossa paixão. Através das lentes, o mundo parece
+          diferente e gostaríamos de mostrar essa diferença. Você pode vê-lo na
+          minha galeria e portofólio que são apresentados aqui.
+        </p>
+      </div>
+      <div class="gridover">
+        <ul class="grid-container_lf">
+          <li><img src="imgs/galeria/overlap/retrato.jpg" alt="" /></li>
+          <li><img src="imgs/galeria/overlap/retrato1.jpg" alt="" /></li>
+          <li><img src="imgs/galeria/overlap/retrato2.jpg" alt="" /></li>
+        </ul>
+        <ul class="grid-container_rg">
+          <li class="lirg"><img src="imgs/galeria/overlap/retrato3.jpg" alt="" /></li>
+          <li class="lirg"><img src="imgs/galeria/overlap/retrato28.jpg" alt="" /></li>
+          <li class="lirg"><img src="imgs/galeria/overlap/wedd404.jpg" alt="" /></li>
+        </ul>
+        <p class="overtext">
+          Fotografia é a nossa paixão. Através das lentes, o mundo parece
+          diferente e gostaríamos de mostrar essa diferença. Você pode vê-lo na
+          minha galeria e portofólio que são apresentados aqui.
+        </p>
+      </div>
+      <div class="circle"></div>
+    </section>
+    <script>
+      const pos = document.documentElement;
+      pos.addEventListener("mousemove", e => {
+        pos.style.setProperty('--x', e.clientX + "px");
+        pos.style.setProperty('--y', e.clientY + "px");
+      });
+    </script>
+  </body>
+</html>
