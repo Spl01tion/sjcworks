@@ -49,7 +49,7 @@
     <p class="copywrite">
       &copy;<script>
         document.write(new Date().getFullYear())
-      </script> SJCWork's - Todos Direitos reservados.
+      </script> SJCWork's - Todos Direitos Reservados.
     </p>
   </div>
 </body>

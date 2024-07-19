@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,7 @@
 </head>
 
 <body>
-  <!-- <div class="loader_bg">
+  <!--<div class="loader_bg">
     <div class="smoke">
 
     <div style="text-align:center;">
@@ -27,15 +26,15 @@
     setTimeout(function(){
       $('.loader_bg').fadeToggle();
     },7000);
-  </script>
-</div> -->
+  </script>-->
+</div>
   <header>
     <div class="logotipo">
-      <a href="index.php" class="logo"><img class="sjclogo" src="../sjcworks/imgs/sjclogo.svg"></a>
+      <a href="index.php" class="logo"><img class="sjclogo" src="imgs/sjclogo.svg"></a>
     </div>
     <nav>
       <ul class="nav_hor">
-        <!-- <li><a class="home cool_link" href="index.php"><i class="fas fa-home"></i></a></li> -->
+        <li><a class="home cool_link" href="blog/index.php">Blog</a></li>
         <li><a class="cool_link" href="portofolio.php">Portofólio</a></li>
         <li class="sub-menu"><a class="cool_link" href="galeria.php">Galeria</a></li>
         <li><a class="cursos cool_link" href="index.php#cursos">Cursos</a></li>
@@ -75,7 +74,7 @@
     <?php include "slider.php"; ?>
   </section>
 
-  <?php include "overlapping.html"; ?></div>
+  <?php include "overlapping.html"; ?>
   <div id="ini" class="a-scroll-static"></div>
   <div class="title-wrap">
     <div class="text--t">
@@ -123,8 +122,8 @@
       <?php include "compareimg.html"; ?>
   </div>
 
-  <div id="services"> -->
-  <div class="a-scroll-static"></div> -->
+  <div id="services"> 
+  <div class="a-scroll-static"></div> 
   <div class="sevtext">
       <div class="a-horizon-static"></div>
       <h1 class="title-serv">SERVIÇOS</h1>

@@ -5,24 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="jquery-3.5.1.js"></script>
     <style>
-      @font-face {
-        font-family: plightit;
-        src: url(fonts/Poppins-LightItalic.otf);
-      }
+@font-face {
+    font-family: bark;
+    src: url(fonts/Barkentina.otf);
+}
 
-      @font-face {
-        font-family: pmed;
-        src: url(fonts/Poppins-Medium.otf);
-      }
+@font-face {
+    font-family: cursv;
+    src: url(fonts/CutiveMono-Regular.ttf);
+}
 
-      @font-face {
-        font-family: preg;
-        src: url(fonts/Poppins-Regular.otf);
-      }
+@font-face {
+    font-family: montsembold;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: montreg;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: pbold;
+    src: url(fonts/Poppins-Bold.otf);
+}
+
+@font-face {
+    font-family: plight;
+    src: url(fonts/Poppins-Light.otf);
+}
+
+@font-face {
+    font-family: plightit;
+    src: url(fonts/Poppins-LightItalic.otf);
+}
+
+@font-face {
+    font-family: pmed;
+    src: url(fonts/Poppins-Medium.otf);
+}
+
+@font-face {
+    font-family: preg;
+    src: url(fonts/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: monts;
+    src: url(fonts/Montserrat-ExtraLightItalic.ttf);
+}
       :root {
         --black: #000;
         --black1: #0b0b0c;
         --dk-black: #202020;
+        --letra:#000;
         --dk-white: #fff;
         --black2: rgb(18, 18, 18);
         --black3: #221f1f;
@@ -43,6 +79,7 @@
         --dk-white: #fff;
         --black2: rgb(18, 18, 18);
         --black3: #221f1f;
+        --letra:#fff;
         --gray: #666;
         --red: #ef3a3d;
         --white2: #d9d9d9;
@@ -75,12 +112,13 @@
       }
       .introver .gridover .overtext {
         width: 90%;
-        font-weight: 600;
-        text-shadow: 2px 2px 2px #fff;
-        font-size: 1em;
+        font-weight: 400;
+        text-shadow: 2px 2px 2px var(--white);
+        color: var(--foreground);
+        font-size: 1.5em;
         position: absolute;
         text-align: center;
-        font-family: plightit;
+        font-family:monts;
         z-index: 5;
       }
 
@@ -89,14 +127,14 @@
         display: grid;
         grid-template-columns: 4fr 2fr 2fr 3fr 6fr;
         max-width: 400px;
-      }
+      }/*
       .gridover:nth-child(1){
         filter: blur(5px);
       }
       .gridover:nth-child(2){
           clip-path: circle(100px at var(--x) var(--y));
 
-      }
+      }*/
       ul {
         list-style: none;
         margin: 0 0 0 2rem;
@@ -144,7 +182,7 @@
         transform: translate(0, 0);
         transform: translate(calc(var(--x) / 25), calc(var(--y) / 25));
       }
-      .circle{
+      /*.circle{
         position: absolute;
         top: -100px;
         left: -100px;
@@ -155,7 +193,7 @@
         box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
         transform: translate(0, 0);
         transform: translate(var(--x),var(--y));
-      }
+      }*/
     </style>
     <title>Overlapping</title>
   </head>
@@ -195,8 +233,9 @@
           minha galeria e portofólio que são apresentados aqui.
         </p>
       </div>
-      <div class="circle"></div>
+      <!--<div class="circle"></div>-->
     </section>
+    
     <script>
       const pos = document.documentElement;
       pos.addEventListener("mousemove", e => {

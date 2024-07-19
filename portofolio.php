@@ -255,7 +255,6 @@ body{
         color: var(--foreground);
         border-left: 1px solid var(--red1);
         border-right: 1px solid var(--red1);
-        background: var(--grayground) ;
         font-family: plight;
     }
 

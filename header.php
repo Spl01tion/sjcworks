@@ -125,7 +125,7 @@ nav li a {
     display: block;
     width: 0;
     height: 2px;
-    background: #f0131e;
+    background: var(--gold);
     transition: width .3s;
 }
 
@@ -190,9 +190,15 @@ header nav ul li a:hover {
     display: none;
 }
 
-.home{
-    color:var(--gold)
+li a.home:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--gold);
+    
 }
+
 
 /* ##############################Responsivo############################## */
 @media (max-width:1120px)
@@ -285,7 +291,7 @@ header nav li .dark-mode-toggle {
     </div>
       <nav>
         <ul class="nav_hor">
-          <!-- <li><a class="home cool_link" href="index.php"><i class="fas fa-home"></i></a></li> -->
+          <li><a class="home cool_link" href="blog/index.php">Blog</a></li>
           <li><a class="cool_link" href="portofolio.php">Portofólio</a></li>
           <li class="sub-menu"><a class="cool_link" href="galeria.php">Galeria</a></li>
           <li ><a class="cursos cool_link" href="index.php#cursos">Cursos</a></li>
