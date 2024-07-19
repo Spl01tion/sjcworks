@@ -119,7 +119,7 @@
   
 </svg>
 
-  <header class="p-3 mb-3 border-bottom">
+  <header class="p-3 border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -152,6 +152,31 @@
       </div>
     </div>
   </header>
+    <!--Slider-->
+  <link rel="stylesheet" href="assets/sliderblog/ism/css/my-slider.css"/>
+  <script src="assets/sliderblog/ism/js/ism-2.2.min.js"></script>
+
+  <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-image_fx="zoomrotate" data-radio_type="thumbnail" id="blog-slider">
+  <ol>
+    <li>
+      <img src="assets/sliderblog/ism/image/slides/flower-729514_1280.jpg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="assets/sliderblog/ism/image/slides/beautiful-701678_1280.jpg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="assets/sliderblog/ism/image/slides/summer-192179_1280.jpg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="assets/sliderblog/ism/image/slides/city-690332_1280.jpg">
+      <div class="ism-caption ism-caption-0" data-delay='300'>My slide caption text</div>
+    </li>
+  </ol>
+</div>
+<!--End Slider-->
   <main class="p-2">
     <h1> Conteudo</h1>
   </main>
@@ -175,4 +200,6 @@
   </footer>
 </div>
 
-<script src="assets/bootstrap/js/bootstrap.bundl
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
