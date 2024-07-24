@@ -4,6 +4,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/montserrat?styles=17402" rel="stylesheet">
     <title>SJCWork's Blog</title>
 
     <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon">
@@ -11,6 +12,10 @@
     <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
 
     <style>
+      body{
+        font-family: 'Montserrat', sans-serif;
+                                                
+      }
       .bi {
         vertical-align: -.125em;
         fill: currentColor;
@@ -119,7 +124,7 @@
   
 </svg>
 
-  <header class="p-3 border-bottom">
+  <header class="p-3 mb-sm-0 border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -133,7 +138,7 @@
           <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <form class="col-12 col-lg-auto mb-3 mb-sm-0 mb-lg-0 me-lg-3" role="search">
           <input type="search" class="form-control" placeholder="Procurar..." aria-label="Search">
         </form>
 
@@ -178,7 +183,44 @@
 </div>
 <!--End Slider-->
   <main class="p-2">
-    <h1> Conteudo</h1>
+    <h1 class="mx-4"> Conteudo</h1>
+    
+      <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-body-secondary">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-lg-auto col-12 d-lg-block">
+            <svg class="bd-placeholder-img w-100" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-1 text-body-secondary">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-lg-auto col-12 d-lg-block">
+            <svg class="bd-placeholder-img w-100" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
     
   <div class="container">
