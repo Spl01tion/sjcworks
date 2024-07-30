@@ -12,9 +12,37 @@
     <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
 
     <style>
+      :root {
+    --black: #000;
+    --black1: #0b0b0c;
+    --dk-black:#202020;
+    --dk-white:#fff;
+    --black2: rgb(18, 18, 18);
+    --black3: #221f1f;
+    --gray: #666;
+    --red: #ef3a3d;
+    --white2: #d9d9d9;
+    --white: #fff;
+    --gold: #f0131e;
+    --gold1: #f0131e;
+
+    --foreground:var(--dk-black);
+    --background:var(--dk-white);
+}
       body{
         font-family: 'Montserrat', sans-serif;
-                                                
+        overflow-x:hidden;                                       
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+    
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(var(--black), var(--black2));
+        border: 1px solid var(--white);
+        border-radius: 6px;
+    
       }
       .bi {
         vertical-align: -.125em;
@@ -132,10 +160,10 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Inventory</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary">Início</a></li>
+          <li><a href="404" class="nav-link px-2 link-body-emphasis">Blog</a></li>
+          <li><a href="#" class="nav-link px-2 link-body-emphasis">Tutoriais & Dicas</a></li>
+          
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-sm-0 mb-lg-0 me-lg-3" role="search">
@@ -183,9 +211,12 @@
 </div>
 <!--End Slider-->
   <main class="p-2">
-    <h1 class="mx-4"> Conteudo</h1>
+  <h2 class="mx-4 my-4" style="font-weight: 780;">Artigos em Destaque</h2>
+
+    <hr class="my-3">
     
       <div class="row mb-2">
+
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
@@ -198,11 +229,12 @@
               <svg class="bi"><use xlink:href="#chevron-right"/></svg>
             </a>
           </div>
-          <div class="col-lg-auto col-12 d-lg-block">
-            <svg class="bd-placeholder-img w-100" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="col-lg-5 col-12 d-lg-block">
+            <img class="bd-placeholder-img w-100" height="250" style=" object-fit:cover;" src="assets/imgs/back_lentes.jpg" alt="">
           </div>
         </div>
       </div>
+
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
@@ -215,8 +247,8 @@
               <svg class="bi"><use xlink:href="#chevron-right"/></svg>
             </a>
           </div>
-          <div class="col-lg-auto col-12 d-lg-block">
-            <svg class="bd-placeholder-img w-100" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="col-lg-5 col-12 d-lg-block">
+          <img class="bd-placeholder-img w-100" height="250" style="object-fit:cover;" src="assets/imgs/back_lentes.jpg" alt="">
           </div>
         </div>
       </div>
@@ -224,22 +256,21 @@
   </main>
     
   <div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      
-      <span class="mb-3 mb-md-0"> &copy;<script>
-        document.write(new Date().getFullYear())
-      </script> SJCWork's - Todos Direitos Reservados.</span>
-    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-3 mb-md-0">
+        <span>&copy;<script>
+          document.write(new Date().getFullYear())
+        </script> SJCWork's - Todos Direitos Reservados.</span>
+      </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="icon-footer" href="https://web.facebook.com/SJCWorkss"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-      <li class="ms-3"><a class="icon-footer" href="https://twitter.com/SJCWorks"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-      <li class="ms-3"><a class="icon-footer" href="https://www.instagram.com/sjcworks/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-      <li class="ms-3"><a class="icon-footer" href="https://www.youtube.com/channel/UCEaQtv1pJKZoBHNjAYQ6NoQ"><svg class="bi" width="24" height="24"><use xlink:href="#youtube"/></svg></a></li>
-      
-    </ul>
-  </footer>
+      <ul class="nav col-12 col-md-4 justify-content-center justify-content-md-end list-unstyled d-flex">
+        <li class="ms-3"><a class="icon-footer" href="https://web.facebook.com/SJCWorkss"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        <li class="ms-3"><a class="icon-footer" href="https://twitter.com/SJCWorks"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="icon-footer" href="https://www.instagram.com/sjcworks/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="icon-footer" href="https://www.youtube.com/channel/UCEaQtv1pJKZoBHNjAYQ6NoQ"><svg class="bi" width="24" height="24"><use xlink:href="#youtube"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
 </div>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>

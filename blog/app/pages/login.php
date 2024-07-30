@@ -271,7 +271,7 @@
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
-    <div class="my-2">Não possui uma conta? <a href="signup.php">Criar conta</a></div>
+    <div class="my-2">Não possui uma conta? <a href="signup">Criar conta</a></div>
     <div class="form-check text-start my-3">
       <input name="remember" class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
       <label class="form-check-label" for="flexCheckDefault">

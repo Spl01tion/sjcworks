@@ -270,11 +270,11 @@
       <input name="retype_password" type="password" class="form-control" id="floatingPassword" placeholder="Retype Password">
       <label for="floatingPassword">Confirmar Password</label>
     </div>
-    <div class="my-2">Ja possui uma conta? <a href="login.php">Entrar</a></div>
+    <div class="my-2">Ja possui uma conta? <a href="login">Entrar</a></div>
     <div class="form-check text-start my-3">
       <input name="aceitarTermos" class="form-check-input" type="checkbox" value="termos_condicoes" id="aceitarTermos">
       <label class="form-check-label" for="aceitarTermos">
-        Eu li e concordo com os <a href="termos_condicoes.php">Termos & Condições</a> 
+        Eu li e concordo com os <a href="termos_condicoes">Termos & Condições</a> 
       </label>
     </div>
     <button class="btn btn-primary w-100 py-2" type="submit" id="btnSubmeter" disabled>Criar conta</button>
